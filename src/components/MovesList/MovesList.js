@@ -39,7 +39,7 @@ class MovesList extends Component {
 
     return (
     <div className="moves-list flex flex-col justify-center align-center">
-    <div>Your moves to {this.filterMoves[0].to}:</div>
+    <div>Your moves:</div>
       <ul className="flex flex-col justify-center align-center">
         {this.filterMoves.map(move => (
           <li className="move-item" key={this.state.i++}>
