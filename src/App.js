@@ -35,15 +35,16 @@ library.add(faExchangeAlt)
 library.add(faTrash)
 library.add(faSave)
 
-
+@inject('store')  
+@observer
 class App extends Component {
   
   render() {
     return (
         <Router>  
         <div className="App">
-          <NavCmp></NavCmp>
-          <Switch>
+          {this.props.store.userStore.user && <NavCmp></NavCmp>}
+          <Switch className="app-container">
             <PrivateRoute exact path="/" component={HomePage} />
             <PrivateRoute path="/contact/edit/:_id?" component={ContactEditPage} />
             <PrivateRoute path="/contact/:_id" component={ContactDetailsPage} />

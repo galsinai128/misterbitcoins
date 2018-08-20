@@ -1,5 +1,7 @@
 .chart{
-
+    border: solid 1px gray;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .chart-container{

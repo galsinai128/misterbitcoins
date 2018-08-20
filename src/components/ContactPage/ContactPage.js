@@ -31,6 +31,7 @@ class ContactPage extends Component {
     render() {
       return (
         <section className="contact-page background flex flex-col justify-center align-center">
+          <br/><br/>
           <h1>Contacts</h1>
           <ContactFilter onFilter={this.onFilter}></ContactFilter>
           <Link to={`/contact/edit`} className="add-contact-link"><button className="add-contact">+</button></Link>

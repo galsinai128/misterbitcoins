@@ -26,6 +26,8 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 } */
+
+
 h1{
   margin: 0;
   padding: 1rem;
@@ -68,4 +70,8 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-} 
+}
+
+.nav-margin{
+  margin-bottom: 3rem;
+}

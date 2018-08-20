@@ -8,22 +8,18 @@ import { observable, computed } from 'mobx';
 @observer
 class MovesList extends Component {
   state = {
-    moves : UserService.getUser().moves,
     i : 0
   };
   
   @observable user = this.props.store.userStore.user;
   
   componentDidMount(){
-    // this.userStore.getUser();
-    let moves = this.state.moves.filter((move)=>{return move.toId === this.props.contact._id})
-    this.setState({ moves });
-  
+
   }
 
   @computed
   get filterMoves(){
-    return this.user.moves.filter((move)=>{return move.toId === this.props.contact._id})
+    return this.user.moves.filter((move)=>{return move.toId === this.props.contact._id}).reverse()
   }
 
   formatted_date(t)
@@ -43,7 +39,7 @@ class MovesList extends Component {
 
     return (
     <div className="moves-list flex flex-col justify-center align-center">
-    <div>Your moves:</div>
+    <div>Your moves to {this.filterMoves[0].to}:</div>
       <ul className="flex flex-col justify-center align-center">
         {this.filterMoves.map(move => (
           <li className="move-item" key={this.state.i++}>

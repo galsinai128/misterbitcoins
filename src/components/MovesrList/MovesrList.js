@@ -20,8 +20,8 @@ class MovesrList extends Component {
 
   @computed
   get filterMoves(){
-    if (this.user.moves.length>3) return this.user.moves.slice(this.user.moves.length-3,this.user.moves.length)
-    else return this.user.moves
+    if (this.user.moves.length>3) return this.user.moves.slice(this.user.moves.length-3,this.user.moves.length).reverse();
+    else return this.user.moves.reverse();
   }
 
 
@@ -38,13 +38,15 @@ class MovesrList extends Component {
   render() {
     return (
     <div className="moves-list flex flex-col justify-center align-center">
-      <div>Your last moves:</div>
+      <div>Your last 3 moves:</div>
       <ul className="flex flex-col justify-center align-center">
           {this.filterMoves.map(move => (
           <li className="move-item" key={this.state.i++}>
             <div>
+              To: {move.to}
+            </div>
+            <div>
               At: {this.formatted_date(move.at)}
-               
             </div>
             <div>
               Amount: {move.amount}

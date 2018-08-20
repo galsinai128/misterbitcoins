@@ -3,6 +3,7 @@ import './NavCmp.css';
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const NavCmp = () => (
     <div className="nav flex space-around align-center">
       <NavLink to="/" className="nav-item flex justify-center align-center"><FontAwesomeIcon icon="home" /></NavLink>

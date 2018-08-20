@@ -48,7 +48,7 @@ class ContactEditPage extends Component {
     setContact(ev){
       ev.preventDefault();
       ContactService.saveContact(this.state.contact)
-        .then(()=>{this.props.history.push('/contact')})
+        .then(()=>{this.props.history.push(`/contact/${this.props.match.params._id}`)})
     }
 
     render() {

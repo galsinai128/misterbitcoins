@@ -13,7 +13,8 @@ class StatisticPage extends Component {
     };
     componentDidMount() {
         BitcoinService.getMarketPrice().then(({ data }) => {
-            this.setState({ marketPrice: data });
+          console.log('data',data)  
+          this.setState({ marketPrice: data });
           });
         BitcoinService.getNumOfTransactions().then(({ data }) => {
           this.setState({ NumOfTransactions: data });
@@ -23,6 +24,7 @@ class StatisticPage extends Component {
     render() {
       return (
         <section className="statistic-page background flex flex-col align-center">
+          <br/><br/>
           <h1>Statistics</h1>
           <div className="charts-container">
             <Chart chartData={this.state.marketPrice}></Chart>
