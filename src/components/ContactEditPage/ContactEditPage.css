@@ -1,0 +1,29 @@
+.contact-edit-page{
+    height: 100vh;  
+}
+
+.edit-input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.edit-btn{
+    background-color: #683695;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+
+.edit-btns-container{
+    width: 100%;
+}
+
+.edit-form{
+    padding: 1rem;
+}
+
+.inputs-container{
+    margin: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.contact-page h1 {
+    margin: 0.5rem;
+}
+
+.add-contact{
+    background-color: #683695;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+}
+
+.add-contact-link{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+}

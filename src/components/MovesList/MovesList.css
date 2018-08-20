@@ -1,0 +1,9 @@
+.moves-list{
+    background-color: #4e4ab4;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.move-item{
+    margin: 1rem;
+}

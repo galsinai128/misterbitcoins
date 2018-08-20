@@ -1,0 +1,26 @@
+.details-avatar{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.contact-details-page{
+    min-height: 100vh;
+}
+
+.contact-details-container{
+    
+}
+
+.details-btn{
+    background-color: #683695;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+
+.details-btns-container{
+    width: 100%;
+}

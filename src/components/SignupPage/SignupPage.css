@@ -1,0 +1,21 @@
+.signup-page{
+    height: 100vh;
+}
+
+.sign-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.sign-form input{
+    margin: 2rem;
+    height: 1.5rem; 
+}
+
+.sign-btn{
+    height: 30px;
+    border: none;
+    background-color: #551a8b;
+    color: white;
+    cursor: pointer;
+}
